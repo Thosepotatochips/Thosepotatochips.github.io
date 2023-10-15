@@ -1,0 +1,314 @@
+<!--Assignment_1-->
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Assignment Final</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&family=Pixelify+Sans&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap" rel="stylesheet">
+
+
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&family=Pixelify+Sans&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+      /*
+      font-family: 'Montserrat';
+      font-family: 'Open Sans';
+      font-family: 'Pixelify Sans';
+      font-family: 'Sofia Sans Condensed';
+      font-family: 'Ubuntu';
+      */
+
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+         v2.0 | 20110126
+         License: none (public domain)
+      */
+
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed, 
+      figure, figcaption, footer, header, hgroup, 
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure, 
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      #wrapper{
+        width: 80.56640625%; /*825/1024*/
+        margin: 0 auto;
+        background-color: ghostwhite;
+      }
+      #feature{
+        width: 81.3257575758%;
+        margin: 3% auto 4% auto;
+        background-color: #FFDE99;
+        overflow: hidden;
+        padding: 1.5% 2.25% 3.5% 2.25%;
+      }
+      #main-content{
+        width: 55.393939%; /*523/825*/
+        float: left;
+        padding: 2%;
+        margin: 2%;
+      }
+      #sidebar{
+        width: 32.60606061%;
+        float: left;
+        margin: 2%;
+      }
+      body{
+        width:;
+        background-color: #B4E9F7;
+        font-family: 'Open Sans';
+      }
+      header{
+        background-color: paleturquoise;
+        padding: 3%;
+      }
+      h1,h2,h3,h4,h5,h6{
+        font-family: 'Pixelify Sans';
+        color: #FF99A7;
+        letter-spacing: .05em;
+      }
+      h1{
+        font-size: 2em;
+        font-weight: bold;
+      }
+      h2{
+        font-size: 1.75em;
+        font-weight: bold;
+      }
+      h3{
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      nav{
+        margin:0 auto;
+        background-color: paleturquoise;
+        padding: 1% 0;
+      }
+      nav ul{
+        width: 85.57575758%; /*706/825*/
+        background-color: paleturquoise;
+        margin: 0 auto;
+      }
+      p{
+        margin: 2.5% 0;
+      }
+      article p{
+        line-height: 130%;
+      }
+      footer{
+        clear: left;
+        padding: 1.5%;
+      }
+      footer p{
+        margin: 0;
+      }
+      figure{
+        background-color: #FFC1B7;
+      }
+      figcaption{
+        font-family: 'Montserrat';
+        margin: 3%;
+      }
+      figure img{
+        max-width: 100%;
+      }
+      ul{
+        list-style-type: circle;
+        width: 75%;
+      }
+      li{
+        line-height:130%;
+      }
+      small{
+        font-size: .75em;
+      }
+      blockquote{
+        font-size: 1.5em;
+        font-family: 'ubuntu', 'sans-serif';
+        line-height: 1.5em;
+        margin: 4% 0 4% 6%;
+        background-color: #FBCEB1;
+        padding: 4%;
+        border-left: 10px solid white;
+        color: ghostwhite;
+      }
+      blockquote:before{
+        vertical-align: -.4em;
+        line-height: 0;
+        content: "\201C";
+        font-size: 4em;
+      }
+      .feature-img{
+        float: left;
+        width: 38%;
+      }
+      .feature-text{
+        float: left;
+        width: 58%;
+        margin-left: 2%;
+        font-family: 'Sofia Sans Condensed';
+        font-size: 1.25em;
+        font-weight: bold;
+        line-height: 105%;
+        letter-spacing: .05em;
+      }
+      .main-figure{
+        width: 40.50478011%;
+        margin-right: 5.56022944550669%;
+        float: right;
+      }
+      .side-figure{
+        width: 88.0794702%;
+        margin: 0 auto;
+        padding: bottom: 2%;
+      }
+      .nav-item{
+      display: inline-block;
+      margin-left: 1%;
+      font-weight: bold;
+      }
+      li.nav-item a:link{
+        color: lightskyblue;
+      }
+      li.nav-item a:visited{
+        color: #FFDE99;
+      }
+      li.nav-item a:hover{
+        color: white;
+      }
+      li.nav-item a:active{
+        color: #FF99A7;
+      }
+      /*type style*/
+      #feature h2{
+      margin-bottom: 2%;
+      }
+      #sidebar figcaption{
+        margin-bottom: 3%;
+      }
+    </style>
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Welcome to Poy's house</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="index.html">page 1</a></li>
+        <li class="nav-item"><a href="Assignment-Final-page-2.html">page 2</a></li>
+        <li class="nav-item"><a href="Assignment-Final-page-4.html">page 4</a></li>
+        <li class="nav-item"><a href="Assignment-Final-page-5.html">page 5</a></li>
+      </ul>
+    </nav>
+
+    <div id="feature">
+      <h2>feature heading</h2>
+      <img src="download_2_1200x1200.png" class="feature-img" />
+      <p class="feature-text">Now to tell you about the show that me and my friends are going to dress up as for halloween</p>
+    </div>
+
+    <div id="main-content">
+      <article>
+        <h2>BigTop Burger</h2>
+        <figure class="main-figure">
+          <img src="th-3396268515.jpg" />
+          <figcaption>
+            <p>Image of Penny talking to Tom (steve)<p>
+          </figcaption>
+        </figure>
+        <p>"The surreal daily lives of the employees of the bigtop burger food truck." - <a href="https://www.imdb.com/title/tt12895894/">IMDb</a></p>
+        <p>
+          Bigtop Burger is an animated short series made by Ian Worthington (worthikids) on youtube. It follows a clown-themed food truck named bigtop burger which is owned by steve, an actual clown.
+        </p>
+        <p>"While Steve's actions are more harmlessly strange than horrifying, it still applies, as the other workers have very muted reactions to him. Even Billie, who seems more reactive, doesn't get too worked up."<a href="https://tvtropes.org/pmwiki/pmwiki.php/Characters/BigtopBurger">[1]</a></p>
+        <p>They are very silly and I really like the side characters</p>
+        <blockquote>
+          Is this... normal food truck stuff?" -billie
+        </blockquote>
+      </article>
+      <article>
+        <h2>Rival food truck</h2>
+        <p>Their rival food truck (who also sells burger) is called Zomburger. Just like bigtop burger, the owner, Cesare (pronouned Chess-a-ray) is a real life zombie.</p>
+        <p>"To Bigtop Burger. While the workers of Bigtop are a little silly, they're rather passive, harmless workers trying to do their job, with their boss being the only one who's truly bizarre. Cesare is a weird person, but rather than acting as contrast, the Zomburger employees actively go along with what he says and go out of their way to attack the competition. Even their chugging guitar theme is named "DOWN" on the soundtrack album - and its lyrics are decidedly less open to debate than those of UP..." <a href="https://tvtropes.org/pmwiki/pmwiki.php/Characters/BigtopBurger">[1]</a></p>
+        <p>I think Cesare is the most interesting out of all of them just because of the most random things he says at all times.</p>
+      </article>
+      <article>
+        <h2>Why we chose bigtop to dress up for halloween</h2>
+        <p>My friends introduced me to the show, and later on we got the rest of our friend group to watch it. The friend who introduced it to me has never cosplayed before, so we decied it would be a good first cosplay for them because it's just dressing up as a clown. Plus the show is very silly which makes it easier to do whatever you want instead of people telling you off for not being in character.</p>
+        <p>I think it might fit with our personalities just because we act like clowns so often. There is barely any serious bones in our bodies. We're like a posse,,,a clown posse (I think that references somthing but I have no clue)</p>
+        <p>I would recommend you watch it if you can. It's around 25 minutes maximum for both seasons.</p>
+      </article>
+    </div>
+
+    <div id="sidebar">
+      <article>
+        <h2>Who I will be for halloween</h2>
+        <figure class="side-figure">
+          <img src="https://static.tvtropes.org/pmwiki/pub/images/billie_bigtop.jpg" />
+          <figcaption>
+            <p>Billie from Bigtop Burger</p>
+          </figcaption>
+        </figure>
+        <p>Bigtop Burger's newest recruit, Billie is not quite used to the strangeness of the job as Penny or Tim are.
+        </p>
+        <p>The reason for me being billie for halloween is because all my friends already chose everyone from the bigtop crew. Which is good for me because I couldn't choose. I like to dress up as characters that I relate to a lot but in bigtop, they were all silly so I couldn't make up my mind.</p>
+        <p>
+          Though I do not think I have what it takes to be billie just because I have too much energy. Billy is a very low energy character and I have too much. Think of it like a tired teenager vs. an energetic 10 year old except both of us are adults. I'm an introvert so I guess that's something we have in common.
+        </p>
+      </article>
+    </div>
+
+    <footer>
+      <p><small>bottom text 2023</small></p>
+      
+    </footer>
+
+  </div><!--close wrapper dic-->
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!--Assignment_1-->
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Assignment Final</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&family=Pixelify+Sans&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap" rel="stylesheet">
+
+
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&family=Pixelify+Sans&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+      /*
+      font-family: 'Montserrat';
+      font-family: 'Open Sans';
+      font-family: 'Pixelify Sans';
+      font-family: 'Sofia Sans Condensed';
+      font-family: 'Ubuntu';
+      */
+
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+         v2.0 | 20110126
+         License: none (public domain)
+      */
+
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed, 
+      figure, figcaption, footer, header, hgroup, 
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure, 
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      
+      #wrapper{
+        width: 80.56640625%; /*825/1024*/
+        margin: 0 auto;
+        background-color: ghostwhite;
+      }
+      #feature{
+        width: 81.3257575758%;
+        margin: 3% auto 4% auto;
+        background-color: #FFDE99;
+        overflow: hidden;
+        padding: 1.5% 2.25% 3.5% 2.25%;
+      }
+      #main-content{
+        width: 55.393939%; /*523/825*/
+        float: left;
+        padding: 2%;
+        margin: 2%;
+      }
+      #sidebar{
+        width: 32.60606061%;
+        float: left;
+        margin: 2%;
+      }
+      body{
+        width:;
+        background-color: #B4E9F7;
+        font-family: 'Open Sans';
+      }
+      header{
+        background-color: paleturquoise;
+        padding: 3%;
+      }
+      h1,h2,h3,h4,h5,h6{
+        font-family: 'Pixelify Sans';
+        color: #FF99A7;
+        letter-spacing: .05em;
+      }
+      h1{
+        font-size: 2em;
+        font-weight: bold;
+      }
+      h2{
+        font-size: 1.75em;
+        font-weight: bold;
+      }
+      h3{
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      nav{
+        margin:0 auto;
+        background-color: paleturquoise;
+        padding: 1% 0;
+      }
+      nav ul{
+        width: 85.57575758%; /*706/825*/
+        background-color: paleturquoise;
+        margin: 0 auto;
+      }
+      p{
+        margin: 2.5% 0;
+      }
+      article p{
+        line-height: 130%;
+      }
+      footer{
+        clear: left;
+        padding: 1.5%;
+      }
+      footer p{
+        margin: 0;
+      }
+      figure{
+        background-color: #FFC1B7;
+      }
+      figcaption{
+        font-family: 'Montserrat';
+        margin: 3%;
+      }
+      figure img{
+        max-width: 100%;
+      }
+      ul{
+        list-style-type: circle;
+        width: 75%;
+      }
+      li{
+        line-height:130%;
+      }
+      small{
+        font-size: .75em;
+      }
+      .feature-img{
+        float: left;
+        width: 38%;
+      }
+      .feature-text{
+        float: left;
+        width: 58%;
+        margin-left: 2%;
+        font-family: 'Sofia Sans Condensed';
+        font-size: 1.25em;
+        font-weight: bold;
+        line-height: 105%;
+        letter-spacing: .05em;
+      }
+      .main-figure{
+        width: 32.50478011%;
+        margin-right: 9.56022944550669%;
+        float: right;
+      }
+      .side-figure{
+        width: 88.0794702%;
+        margin: 0 auto;
+        padding: bottom: 2%;
+      }
+      .nav-item{
+      display: inline-block;
+      margin-left: 1%;
+      font-weight: bold;
+      }
+      li.nav-item a:link{
+        color: lightskyblue;
+      }
+      li.nav-item a:visited{
+        color: #FFDE99;
+      }
+      li.nav-item a:hover{
+        color: white;
+      }
+      li.nav-item a:active{
+        color: #FF99A7;
+      }
+
+
+      /*type style*/
+      #feature h2{
+      margin-bottom: 2%;
+      }
+      #sidebar figcaption{
+        margin-bottom: 3%;
+      }
+    </style>
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Welcome to Poy's house</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="index.html">page 1</a></li>
+        <li class="nav-item"><a href="Assignment-Final-page-2.html">page 2</a></li>
+        <li class="nav-item"><a href="Assignment-Final-page-3.html">page 3</a></li>
+        <li class="nav-item"><a href="Assignment-Final-page-5.html">page 5</a></li>
+      </ul>
+    </nav>
+
+    <div id="feature">
+      <h2>feature heading</h2>
+      <img src="https://i.pinimg.com/originals/7d/5e/ad/7d5eadf754492c1dcbcbca8533fc5684.png" class="feature-img"> <p class="feature-text">"But I am the devil, from the bible so..." - sonic fandubs</p>
+    </div>
+
+    <div id="main-content">
+      <article>
+        <h2>I can't believe I'm still working on this document</h2>
+        <figure class="main-figure">
+          <img src="https://i.pinimg.com/originals/10/0f/39/100f3944e5bf04233423b6cc1fa5a498.png" />
+          <figcaption>
+            <p>Image of rei sakuma from the hit game ensemble stars lmao.</p>
+          </figcaption>
+        </figure>
+        <p>
+          I meant to turn this in like 13 hours late like last time but also I got kidnapped to my grandparents house for like 6 hours which signifigantly impacted the time I had to work.
+        </p>
+        <p>Granted, I brought the computer to their house to do homework, I did not know the wifi password. So I had to put in a bunch of filler stuff until I could actually download the things I needed.</p>
+        <p>I still think things should be done in a timely manner</p>
+      </article>
+      <article>
+        <h2>Speaking of Timely manner</h2>
+        <p>I don't know why but this time I've been having a bit of trouble of what I want to put into this website. It doesn't help that I feel awkward copy-pasting too much because then it feels like cheating.</p>
+        <p>I don't think I've ever cheated in my life,, which probably says a lot about me. I mean one time I felt immense guilt over not being able to pay the bus fare (which is like $2) and lost my mind over it for 2 weeks. I still feel bad about it ;0;</p>
+        <p>I have around 2 more hours to turn it in before it actually turns into a full day that has passed since this project was due. Thank you for giving me a full score on the last project even if it was 13 hours late, I appreaciate it ! :D</p>
+      </article>
+      <article>
+        <h2>My Siblings keep bothering me</h2>
+        <p>Currently, They are playing in my room and bothering me when I'm doing my homework. I know they don't mean to be annoying (they do) but I am trying to speedrun my final because I am very bad at time management.</p>
+        <p>Now they are pretending to fight each other and are being very loud. I don't know why they want to play in my room when they are sick but who does know? not me.</p>
+        <p>I like to hangout with my friends most of the time, though I'm an introvert. Usually that makes me very tired to do any work so I end up staying in the library for most of the school year. though some other hobbies I like are to play this rhythm game called Ensemble Stars, which you can learn more about on page 2.</p>
+      </article>
+    </div>
+
+    <div id="sidebar">
+      <article>
+        <h2>Now I'm going to list a bunch of Sonic Fandub Quotes</h2>
+        <figure class="side-figure">
+          <img src="https://i.pinimg.com/originals/b2/84/24/b2842431a3d156eb2e2f6dda3e3fc211.png" />
+          <figcaption>
+            <p>You will never guess who this is</p>
+          </figcaption>
+        </figure>
+        <ul>
+          <li>"you idiot! I HAVE 70 ALTERNATIVE ACCOUNTS" - Dr. Eggman</li>
+          <li>"top 30 reasons sonic is sorry - number 5 will surprise you" - sonic</li>
+          <li>"eyy you know who it is! it's adam sandler!" - Adam sandler</li>
+          <li>"knuckles, that's a great amy impression" - Sonic</li>
+          <li>"You are under arrest for not being sexy enough" - robot</li>
+          <li>"Oh no! Hatsoonae Mi-ku is dead!" - Sonic</li>
+          <li>"How fast do you want to run? two fast? three fast?...Twelve fast" - sonic</li>
+        </ul>
+        <h3>Links to some of the fandubs</h3>
+        <ul>
+          <li><a href="https://youtu.be/hzrN8_-3e2w?si=Ae46SgD9UfAGYCOa">Sonic Riders | Real-Time Fandub Games</a></li>
+          <li><a href="https://youtu.be/W-ZuKp8P7gA?si=fqQkaEHAbGnmBGuD">Sonic Adventure 2 (Dark Story + Final Story) | Real-Time Fandub Games</a></li>
+          <li><a href="https://youtu.be/NGe79n-jcHk?si=kCtfgo24iqfRqDS8">Sonic the Hedgehog (2006) | Real-Time Fandub Games</a></li>
+          <li><a href="https://www.youtube.com/watch?v=W-ZuKp8P7gA">Shadow the Hedgehog | SnapCube's Real-Time Fandub</a></li>
+        </ul>
+        <p>Something Something filling up this page with random stuff because I lack the ability to put serious things into a website plus where is the fun in that?</p>
+      </article>
+    </div>
+
+    <footer>
+      <p><small>bottom text 2023</small></p>
+      
+    </footer>
+
+  </div><!--close wrapper dic-->
+</body>
+</html>
